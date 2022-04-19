@@ -1,12 +1,12 @@
 function valida(cedula){
     
-    cedula = document.getElementById('cedula').value;
+    cedula = cedula;
     var cantidad = cedula.length;
     
     if(cantidad == 11){
                 
         c = cedula.split('');
-        //  [2,2,3,0,0,2,2,4,3,7,9]
+        // ejemplo [2,2,3,0,0,2,2,4,3,7,9]
         v = [1,2,1,2,1,2,1,2,1,2]
                 
         var result = 0 ; 
@@ -39,13 +39,13 @@ function valida(cedula){
 
             if (c[10] == dp) { 
                 
-                document.getElementById('result').innerHTML = '<p> Cedula Correcta </p>';
+                document.getElementById('result').innerHTML = '<p> Cédula Correcta </p>';
             } else {
                 
-                document.getElementById('result').innerHTML = '<p> Cedula Incorrecta </p>';    
+                document.getElementById('result').innerHTML = '<p> Cédula Incorrecta </p>';    
             }
             
         }else{
-            document.getElementById('result').innerHTML = '<p>Ingrese una cedula valida</p>';
+            document.getElementById('result').innerHTML = '<p>Ingrese una cédula válida</p>';
         }
    }       
